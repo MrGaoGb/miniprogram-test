@@ -4,5 +4,5 @@
     <text class="log-item">{{index + 1}}. {{log.date}}</text>
   </block>
 
-  <button bindtap="handleClickEvent">跳转到首页</button>
+  <button bindtap="handleClickEvent">跳转到首页~</button>
 </view>
