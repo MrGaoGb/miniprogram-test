@@ -5,7 +5,8 @@ Page({
   data: {
     logs: []
   },
-  onLoad() {
+  onLoad(options) {
+    console.log("携带过来的参数信息",options);
     this.setData({
       logs: (wx.getStorageSync('logs') || []).map(log => {
         return {
@@ -13,6 +14,12 @@ Page({
           timeStamp: log
         }
       })
+    })
+  },
+  handleClickEvent(){
+    // 跳转到首页
+    wx.switchTab({
+      url: '/pages/index/index',
     })
   }
 })

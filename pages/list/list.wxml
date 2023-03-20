@@ -1,4 +1,15 @@
 <!--pages/list/list.wxml-->
 <view class="container">
-  <text>{{message}}</text>
+  下面执行操作
+  <view id="{{vid}}">{{message}}</view>
+
+  <view wx:for="{{userList}}" wx:key="i" wx:for-item="user">
+    用户编号:{{index+1}} |用户姓名:{{user.userName}}|年龄:{{user.age}}
+  </view>
+
+  <!-- 点击事件 -->
+  <button bindtap="handleClickEvent" data-id="10000" data-myid="23232">点击触发传参</button>
+  <!-- 事件传参 需要在当前的dom上增加属性 data-自定义形参 -->
+
+  <button bindtap="handleClickToEvent" data-id="10000" data-myid="23232">点击跳转页面</button>
 </view>

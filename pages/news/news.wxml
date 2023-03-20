@@ -1,0 +1,5 @@
+<!--pages/news/news.wxml-->
+<view>
+<view>新闻页面</view>
+<button bindtap="handleClickToEvent">点击跳转至log</button>
+</view>

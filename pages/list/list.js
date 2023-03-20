@@ -6,7 +6,18 @@ Page({
    * 页面的初始数据
    */
   data: {
-    "message":"商户交易列表"
+    message:"商户交易列表",
+    vid:123445,
+    userList:[{
+      userName:"高启强",
+      age:35
+    },{
+      userName:"高启盛",
+      age:25
+    },{
+      userName:"高启兰",
+      age:23
+    }]
   },
 
   /**
@@ -71,5 +82,19 @@ Page({
    */
   onShareAppMessage() {
 
+  },
+  // 声明点击事件
+  handleClickEvent(event){
+    console.log("被点击了",event);
+    // 获取自定参数
+    const requestParams = event.currentTarget.dataset;
+    console.log("获取到点击事件传递的参数:",requestParams);
+  }
+,
+  handleClickToEvent(){
+    // 路由跳转页面
+    wx.navigateTo({
+      url: '/pages/news/news',
+    })
   }
 })
