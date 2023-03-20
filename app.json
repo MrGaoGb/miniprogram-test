@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/list/list",
+    "pages/myself/myself"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F0FFF0",
+    "navigationBarTitleText": "我的小程序",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#F5F5F5"
+    
+  },
+  "tabBar": {
+    "selectedColor": "#6495ED",
+    "backgroundColor": "#FFFAF0",
+    "borderStyle": "white",
+    "list":[{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "/images/tabbar/homepage.png",
+      "selectedIconPath": "/images/tabbar/homepage-sel.png"
+    },{
+      "pagePath": "pages/list/list",
+      "text": "购物车",
+      "iconPath": "/images/tabbar/basket.png",
+      "selectedIconPath": "/images/tabbar/basket-sel.png"
+    },{
+      "pagePath": "pages/myself/myself",
+      "text": "我的",
+      "iconPath": "/images/tabbar/user.png",
+      "selectedIconPath": "/images/tabbar/user-sel.png"
+    }]
+  },
+ 
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

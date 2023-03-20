@@ -1,0 +1,4 @@
+<!--pages/myself/myself.wxml-->
+<view class="container">
+  <text>我的个人信息</text>
+</view>
